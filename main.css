@@ -202,7 +202,7 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/39/d3/0d/20180609-141818-largejpg.jpg?w=1200&h=-1&s=1");
+  background-image: url("https://www.journalofnomads.com/wp-content/uploads/2022/05/Kolsai-Lakes-and-Kaindy-Lake-Kazakhstan.jpg");
   counter-increment: item;
 }
 
@@ -210,7 +210,10 @@ ol, li {
   background-image: url("https://www.asia-hikes.com/wp-content/uploads/2021/06/iStock-1273005120-1024x1024.jpg");
 
 }
+.carousel__slide:nth-child(even) {
+  background-image: url("https://www.otrar.kz/Portals/0/PackFlashItemImages/WebReady/Kaindy_kolsai.jpg");
 
+}
 .carousel__slide:before {
   content: counter(item);
   position: absolute;
