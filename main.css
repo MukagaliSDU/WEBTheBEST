@@ -153,7 +153,6 @@ body {
   box-sizing: border-box;
   scrollbar-color: transparent transparent; /* thumb and track color */
   scrollbar-width: 0px;
-  border-radius: 5%;
 }
 
 *::-webkit-scrollbar {
@@ -203,7 +202,7 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #f99;
+  background-image: url("");
   counter-increment: item;
 }
 
@@ -254,30 +253,7 @@ animation-iteration-count: infinite;
   animation-name: none;
 }
 
-.carousel__navigation {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
 
-.carousel__navigation-list,
-.carousel__navigation-item {
-  display: inline-block;
-}
-
-.carousel__navigation-button {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #333;
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  border-radius: 50%;
-  font-size: 0;
-  transition: transform 0.1s;
-}
 
 .carousel::before,
 .carousel::after,
