@@ -14,32 +14,94 @@
         <a href="#">Clients</a>
         <a href="#">Contact</a>
     </div>
-
-
     <header style="background-color:#fff; height: 50px;padding-top: 2px;">
         <div class="header">
             <div id="main"><span  style="font-size:25px;cursor:pointer; color: #ebeff2;" onclick="openNav()">&#9776;</span></div>
             <div id="LIVE_ID"><img style="width: 36px; vertical-align: middle;"  src="https://shymbulak.com/_nuxt/img/live.e90e98b.svg">L I V E</div>
-            <div id="KOLSAI_ID" style="margin: auto;"><img  style="width: 55px; vertical-align: middle;" src="./kolsai_logo-removebg-preview__1_-removebg-preview (1).png">K O L S A I</div>
+            <div id="KOLSAI_ID" style="margin: auto;"><img  style="width: 55px; vertical-align: middle;" src="./kolsai_logo-removebg-preview (1).png">K O L S A I</div>
             <div id="register_id">Register</div>
             <div id="Sign_in_id">Sign in</div>
             
         </div>
     </header>    
+    
+    
+    <div class="carouselee">
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4"
+               class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2"
+               class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3"
+             class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4"
+             class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1"
+             class="carousel__next">Go to first slide</a>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1"
+               class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2"
+               class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3"
+               class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4"
+               class="carousel__navigation-button">Go to slide 4</a>
+          </li>
+        </ol>
+      </aside>
+    </section>
+</div>
 
 
-  
-  <script>
+<script>
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.body.style.backgroundColor = "rgba(255,255,255,0.4)";
   }
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
+    document.body.style.backgroundColor = "black";
   }
   </script>
 
