@@ -1,7 +1,7 @@
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    background-color: black;
+    background-color: white;
   }
   
   .sidenav {
@@ -55,9 +55,18 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-  
+  .headerFixed{
+    background-color: rgba(0,0,0,.9); 
+     height: 50px;
+     padding-top: 2px;
+     position: sticky;
+     top: 0;
+     z-index: 2;
+  }
   .header{
     display:flex;
+
+    
   }
   #LIVE_ID, #register_id, #Sign_in_id{
     border: 3px solid #ebeff2;
@@ -100,9 +109,13 @@ body {
   }
 
   /*---------------------main-------------------------------*/
+  .page_restaurant{
+    z-index: 1;
+  }
   .text_title, .text_reklame{
-    color: #f1f1f1;
+    color: white;
     font-family: HelveticaNeueCyr,Helvetica Neue,Helvetica,Arial,sans-serif;
+    
   }
   .container{
     padding: 3% 4%;
@@ -111,10 +124,10 @@ body {
 .row{
   display: flex;
    justify-content: space-around;
-   margin: 0 -3%;
+   margin: 5% -3%;
   
 }
-.col_1{
+.col{
   display: block;
   width: 27%;
   height: 15rem;
@@ -126,15 +139,23 @@ body {
 
   
 }
+.col_1{
+  width: 27%;
+  height: 15rem;
+}
+.col_2{
+  width: 45%;
+  height: 15rem;
+}
 /* .media{*/
   /* border-radius: 10px; */
   
 .restourand_img{
-  background-image: url(./restaurantPicture/5f2290bca043b36077864287b36e13ba.png);
+ 
 
   position: absolute;
   background-size: cover;
-  background-position: top center;
+  background-position:  center center;
 
   height: 100%;
   width: 100%;
@@ -190,7 +211,7 @@ body {
     }
   } */
 
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     .row{
       display: flex;
       justify-content: center;
@@ -198,6 +219,9 @@ body {
       
     }
     .col_1{
+      width: 100%;
+    }
+    .col_2{
       width: 100%;
     }
   }
