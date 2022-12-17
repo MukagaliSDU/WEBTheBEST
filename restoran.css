@@ -130,9 +130,11 @@ body {
   display: block;
   width: 27%;
   height: 15rem;
-  /* background-color: rgb(81, 75, 75); */
+  background-color: rgb(0, 0 , 0, 0.);
   margin: 2% 0.25%;
   position: relative;
+  border-radius: 20px;
+  /* z-index: ; */
   
 
   
@@ -145,22 +147,24 @@ body {
   width: 45%;
   height: 15rem;
 }
-/* .media{*/
-  /* border-radius: 10px; */
-  
+/* .media{
+  background-color: rgba(0, 0, 0, 0.1);
+}   */
 .restourand_img{
  
 
   position: absolute;
   background-size: cover;
   background-position:  center center;
-
+ 
   height: 100%;
   width: 100%;
   z-index: -1;
-
+ 
   border-radius: 20px;
   
+ 
+
 }
 
 .media_content{
@@ -209,17 +213,75 @@ body {
     }
   } */
 
-  @media (max-width: 1000px) {
-    .row{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      
+ 
+
+  /*------------footer-----------------*/
+  footer {
+    background-color: #484848;
+    color: white;
+    padding:2% 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    padding-top: 3%;
+}
+
+.f-1 {
+    width: 40%;
+    display: flex;
+}
+
+.f-1 div {
+    width: 50%;
+    min-width: 60%;
+}
+
+footer a {
+    color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+    .single, .row-1, .row-2, .row-3, .in-3 {
+        display: block;
     }
-    .col_1{
-      width: 100%;
+
+    .single div {
+        padding-top: 4%;
     }
-    .col_2{
-      width: 100%;
+
+    .row-1 div, .row-2 div, .row-3 div {
+        padding-top: 4%;
     }
+
+    .f-1 {
+        justify-content: center;
+        padding-left: 15%;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .f-1 div {
+        min-width: 60%;
+    }
+
+    footer {
+        display: block;
+    }
+
+}
+@media (max-width: 1000px) {
+  .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
   }
+  .col_1{
+    width: 100%;
+  }
+  .col_2{
+    width: 100%;
+  }
+}
