@@ -5,7 +5,6 @@ function openNav() {
     document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
     document.getElementsByClassName("text_title")[0].style.color = "white";
     document.getElementsByClassName("text_reklame")[0].style.color = "white";
-
   }
   
   function closeNav() {
