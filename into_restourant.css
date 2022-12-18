@@ -1,0 +1,220 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #989898;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    border: 3px solid #ebeff2;
+    border-radius: 12px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 2px;
+    background-color: rgb(5, 161, 5);
+    margin-left: 1%;  
+    transition: 0.5s;
+    
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .headerFixed{
+    background-color: rgba(0,0,0,.9); 
+     height: 50px;
+     padding-top: 2px;
+     position: sticky;
+     top: 0;
+     z-index: 2;
+  }
+  header{
+    margin-top: -0.5vw;
+  }
+  .header{
+    display:flex;
+    position: sticky;
+  
+    
+  }
+  #LIVE_ID, #register_id, #Sign_in_id{
+    border: 3px solid #ebeff2;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+  #Sign_in_id{
+    margin-right: 4%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 18px;
+    padding-top:11px;
+    background-color: #75b6f2;
+    color: #ebeff2;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  #LIVE_ID{
+    margin-left: 3%;
+    vertical-align:middle;
+    padding-top: 5px;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+  }
+  #register_id{
+    margin-right: 1%;
+    padding-top:11px;
+    font-size: 18px;
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: #fc0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  #KOLSAI_ID{
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+
+  /*-----------------body------------*/
+  body{
+    background: rgb(248, 249, 251);
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    
+  }
+.link_to_restourant{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    margin: 2% 5%;
+}
+/*---------image - col---------*/
+.col_1{
+    width: 50%;
+    position: relative;
+
+}
+.photos_content{
+    display: flex;
+    justify-content: center;
+}
+.image_row_1{
+    background-image: url("./into_restourand/58bf15164a61dca86515f32d6e031c48.jpg");
+    height: 32vw;
+    position: absolute;
+    background-size: cover;
+    background-position:  center center;
+    border-radius: 2vw 0 0 2vw;
+
+  /* height: ; */
+  width: 100%;
+  /* z-index: -1; */
+}
+
+.row_1{
+ height: 100%;
+ /* margin-top: 2vw; */
+ margin-left: 0.8vw;   
+ 
+}
+.col_2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    width: 50%;
+    height: 32vw;
+    
+}
+.col_2_1{
+    background-image: url("./into_restourand/fc5afd8fdf3a385606ca85cdbd03af73.jpg");
+    background-size: cover;
+    background-position:  center center;
+    border-radius:  0 2vw 0 0;
+
+}
+.col_2_2{
+    margin-top: 0.8vw;
+    background-image: url("./into_restourand/946a100731c106319b36717ea1fe2cc3.png");
+    background-size: cover;
+    border-radius: 0 0 2vw 0;
+   
+
+
+
+}
+/*----------------about restoran----------------------*/
+
+.about_info{
+    margin-top: 3vw;
+    
+}
+.about_icon{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about{
+
+    width: 60%;
+}
+.menu_column{
+    background-color: #75b6f2;
+    width: 40%;
+}
+
+.card{
+    background-color: white;
+    width: 20%;
+    margin: 1vw 1vw;
+    border-radius: 2vw;
+    padding: 0 2vw;
+    border: 1px solid lightblue;
+    
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.h4{
+    height: 3px;
+    padding: 0 12px;
+    
+}
+
+
+
