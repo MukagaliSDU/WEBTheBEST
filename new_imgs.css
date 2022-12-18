@@ -1,0 +1,6 @@
+.news_container{
+    display: flex;
+}
+.news img{
+    max-width: 70%;
+}
