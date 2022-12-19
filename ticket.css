@@ -120,13 +120,10 @@ li {
 }
 
 .in-1 {
-    padding-left: 10%;
     margin-top: 5%;
+    margin-left: 2%;
 }
 
-.in-1 h1 {
-    margin: 7% 0;
-}
 .contents{
     font-size: 16px;
     display: flex;

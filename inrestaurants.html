@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="inrestaurants.css">
     <script src="./inrestaurants.js"></script>
     <script src="./homepage.js"></script>
-    <link rel="stylesheet" href="../directory/restoran.css">
 
 </head>
 <body onload="hotel()">
@@ -18,7 +17,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./homepage.html">Main</a>
         <a href="./restaurants.html">Restaurant</a>
-        <a href="ticket.html">Tickets</a>
+        <a href="./ticket.html">Tickets</a>
         <a href="./Entertainments.html">Entertainments</a>
         <a href="./hotels.html">Hotel</a>
         <a href="./about_us.html">Info</a>
@@ -28,7 +27,7 @@
         <li id="main"><span class="main" onclick="openNav()">&#9776;</span></li>
     </div>
     <div>
-        <li id="KOLSAI_ID" id="KOLSAI_ID"><img class="logo" src="blacklogo.PNG">S H Y M B U L A K</li>
+        <li id="KOLSAI_ID"><img class="logo" src="./logo_moon+light-removebg-preview.png">K O L S A Y</li>
     </div>
     <div class="id">
         <li id="register_id">Register</li>
@@ -36,69 +35,102 @@
     </div>
 </span>
 
-<div class="Newsid">Restaurants</div>
-
-<div class="news_container">
-    <div class="news">
-        <img id="news_image" src="https://www.datocms-assets.com/55179/1647270109-cf6523a1a5ff-img_5012.jpg">
-        <div class="hotel-data">
-            <div class="hotel-data-desc">11.12.22<p></p>On 09.12.22, operation of the Medeu-Shymbulak cable cars was
-                suspended for 45 minutes from 16:30 to 17:15 due to technical problems. The reason for stoppage was the
-                failure of the contactor of the cable cars technical condition monitoring system, whereupon the data on
-                the condition ceased to be received by the central station, resulting in stoppage of the cable cars.
-                <p></p>
-                At 17:15, for guests transportation who were in the Medeu-Shymbulak cable cars at the moment of
-                stoppage, readjustment and start-up on the standby mode was made until the technical problems were
-                completely eliminated by the technical team of "Shymbulak" resort.<p></p>
-                At 18:30, "Shymbulak" resort technical team fully eliminated the faults and the cable cars continued its
-                normal operation. <p></p>
-                Free tea was provided to the guests, who were in line for the ride, and restaurants continued its
-                operation so that the resort guests could wait for their turn to go down in warm environment. Also
-                transfer by company vehicles to "Medeu" was arranged for the guests with children. <p></p>
-                At the moment necessary measures have been taken to reduce the risk of recurrence of such situations and
-                discomfort of resort guests in such incidents, including the work on installation of rescue - suitcases
-                (rescue blanket, self-heating insoles; dry rations; activated carbon; antipyretic; anti-allergy
-                medicine; anti-diarrhea medicine; eye drops;) for emergency situations in each cabin of the cable cars.
-                The resort administration expresses its apologies for the inconvenience caused.
-            </div>
+<div class="certain_hotel_wrapper">
+    <h4><a href="./restaurants.html"> Restaurants</a> <a id="restaurants_name">/ Kolsay Lakes Town</a></h4>
+    <div class="about_hotel">
+        <div class="about_images">
+            <img src="https://abr.kz/storage/app/uploads/public/635/8c5/ec5/6358c5ec51f37991756879.jpg" alt="photo" id="restaurants_image">
         </div>
-    </div>
-
-    <div class="more">
-        <a class="nuxt-link-active">
-            <div class="span">Other news</div>
-        </a>
-        <div class="more-news">
-            <div class="news-items">
-                <a class="news-item nuxt-link-active">
-                    <div class="date lit">09.11.22</div>
-                    <hr>
-                    <a href="#" id="id3" onclick="callHotel(id)">
-                        <div class="name">What Is a Season Pass?</div>
-                    </a>
-                </a>
+        <div class="about_data">
+            <div class="about_info">
+                <div class="about_info_hotel">
+                    <h2>About restaurants</h2>
+                    <h4 id="restaurants_description">Situated in Gornyy Gigant, within 2.8 km of Kasteev State Museum of Arts and 3.1 km of Atakent-Expo, Kolsay Lakes Town features accommodation with a restaurant. The property is around 3.3 km from Almaty Central Stadium, 4 km from Dolphin Entertainment Centre and 4.5 km from Botanical Garden. The hotel has family rooms.
+                        Abay Opera House is 4.9 km from the hotel, while Ascension Cathedral is 5.1 km from the property. The nearest airport is Almaty International Airport, 19 km from Kolsay Lakes Town.
+                    </h4>
+                </div>
+                <div class="about_info_contact">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li>
+                            <div class="contact-img">
+                                <img src="https://shymbulak.com/_nuxt/img/inst.c237746.svg" alt="">
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights" id="restaurants_name_ins">Tenir Eco Hotels</a>
+                        </li>
+                        <li>
+                            <div class="contact-img">
+                                <img src="https://shymbulak.com/_nuxt/img/location.156179b.svg" alt="">
+                            </div>
+                            <a id="restaurants_location">г. Алматы, ул. Керей-Жанибек хандар, д. 558/1</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about_info_advantages">
+                    <h2>Advantages</h2>
+                    <div class="features">
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/06b659accde306a99c25c0f417108f26.svg" alt="photo">
+                            </div>
+                            <h4>Wi-Fi</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/d5d5cb13296c98c589a1ed49d040152a.svg" alt="photo">
+                            </div>
+                            <h4>Restaurant</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/454f145949c7892779cf79a4b41d9f5d.svg" alt="photo">
+                            </div>
+                            <h4>Breakfast</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/d5d5cb13296c98c589a1ed49d040152a.svg" alt="photo">
+                            </div>
+                            <h4>Bar</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/cbb022dd654def77276a6992d65a00fb.svg" alt="photo">
+                            </div>
+                            <h4>ТV</h4>
+                        </div>
+                        <div class="one_feature">
+                            <div class="feature_img">
+                                <img src="https://cdn.shymbulak-dev.com/media/675c8fcf3e03c5043a52a990754221ce.svg" alt="photo">
+                            </div>
+                            <h4>Panarama</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="news-items">
-                <a class="news-item nuxt-link-active">
-                    <div class="date lit">09.11.22</div>
-                    <hr>
-                    <a href="#" id="id4" onclick="callHotel(id)">
-                        <div class="name">Season is open!</div>
-                    </a>
-                </a>
-            </div>
-            <div class="news-items">
-                <a class="news-item nuxt-link-active">
-                    <div class="date lit">09.11.22</div>
-                    <hr>
-                    <a href="#" id="id6" onclick="callHotel(id)">
-                        <div class="name">How to Prepare for Skiing/Snowboarding</div>
-                    </a>
-                </a>
+            <div class="tariffs_wrapper">
+                <div class="tariffs">
+                    <div class="tariffs_container">
+                        <div class="one_tariff">
+                            <div class="tariff_img">
+                                <img id="restaurants_room" src="https://cdn.shymbulak-dev.com/media/77e44272317a8a600581577402657bd8.png" alt="deluxe">
+                            </div>
+                            <span class="title" id="Title">Делюкс</span>
+                            <h4 id="restaurants_room_description">Размещение подходит для 2 взрослых и 1 ребенка (от 8 до 14 лет) на доп. месте. Завтрак включен в стоимость.</h4>
+                            <ul>
+                                <li id="restaurants_rooms_person">
+                                    <img src="https://shymbulak.com/_nuxt/img/persons.ad2b739.svg" alt="size">
+                                    Гостей: 2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script src="./inrestaurants.js"></script>
 <footer>
     <div class="f-1">
         <div>
