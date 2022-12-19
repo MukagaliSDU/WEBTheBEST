@@ -10,6 +10,5 @@ function hotel(){
         case "id7": document.getElementById("news_image").src = "https://cdn.shymbulak-dev.com/media/114ab4591e13d15efb86c03c6d27793f.png"; break;
         case "id8": document.getElementById("news_image").src = "https://files.kazakhstan.travel/files/public/201901/11/b7c32a07573d4f1383a1047b6ef31027/almaty-shymbulak.jpg"; break;
         case "id9": document.getElementById("news_image").src = "https://astanatimes.com/wp-content/uploads/2015/10/DSC06003.jpg"; break;
-
     }
 }
