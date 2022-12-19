@@ -1,0 +1,48 @@
+
+
+footer {
+    background-color: #1f1f1f;
+    color: rgba(218, 216, 216, 0.933);
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.f-1 {
+    width: 40%;
+    display: flex;
+}
+
+.f-1 div {
+    width: 50%;
+    min-width: 20%;
+}
+
+footer li {
+    padding-top: 3%;
+    list-style-type: none;
+}
+
+footer a {
+    color: rgba(125, 123, 123, 0.959);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .f-1 {
+        justify-content: center;
+        padding-left: 15%;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .f-1 div {
+        min-width: 60%;
+    }
+
+    footer {
+        display: block;
+    }
+}
