@@ -263,5 +263,8 @@ a {
     .certain_hotel_wrapper h1{
         margin-left: 5%;
     }
+    .certain_hotel_wrapper .about_hotel .about_data .about_info{
+        width: 90%;
+    }
 }
 
