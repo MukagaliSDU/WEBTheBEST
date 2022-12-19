@@ -5,19 +5,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+.contents{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: "Inter Regular", sans-serif;
     font-style: normal;
+    padding-top: 3%;
 }
-h1{
+.contents h1{
     font-weight: 600;
     color: #212225;
     font-family: "Inter Semibold", sans-serif;
     font-size: 32px;
-    margin-bottom: 48px;
+    margin: 1% 0;
 }
 .hotels_wrapper{
     font-size: 16px;
@@ -29,7 +30,6 @@ h1{
     align-items: flex-start;
     grid-gap: 24px;
     gap: 24px;
-    margin: 48px 0;
 }
 
 .hotels_wrapper .hotel-link{
