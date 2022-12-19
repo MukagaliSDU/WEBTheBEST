@@ -207,7 +207,7 @@ img {vertical-align: middle;}
   transform: scale(0.95, 0.95);
 }
 
-#News{
+.Newsid{
   font-size: 32px;
   margin-left: 9vw;
   color: #212225;
@@ -245,7 +245,6 @@ img {vertical-align: middle;}
   height: 270px;
   border: 2px solid #b0d3eef9;
   border-radius: 6%;
-  cursor: pointer;
 
 }
 hr{
@@ -275,6 +274,9 @@ hr{
   overflow:hidden;
   width: 290px;
   text-overflow: ellipsis;
+}
+.date_div a{
+  text-decoration: none;
 }
 .date_div div{
   margin-top: 3%;

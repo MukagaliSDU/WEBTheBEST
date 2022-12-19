@@ -7,11 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="./restoran.css">
     <link rel="stylesheet" href="./new_imgs.css">
-    <link rel="stylesheet" href="./main.css">
     <script src="./animation.js"></script>
+    <script src="./news_change.js"></script>
+    <script src="./certain.js"></script>
+
+
 
 </head>
-<body>
+<body onload="hotel()"> 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./register.html">Main</a>
@@ -22,40 +25,58 @@
         <a href="#">For kids</a>
         <a href="#">Info</a>
     </div>
-    <header style="background-color:#fff; height: 50px;padding-top: 2px;">
+    <header>
         <div class="header">
             <div id="main"><span  style="font-size:25px;cursor:pointer; color: #ebeff2;" onclick="openNav()">&#9776;</span></div>
             <div id="LIVE_ID"><img style="width: 36px; vertical-align: middle;"  src="https://shymbulak.com/_nuxt/img/live.e90e98b.svg">L I V E</div>
-            <div id="KOLSAI_ID" style="margin: auto;"><img  style="width: 55px; vertical-align: middle;" src="./kolsai_logo-removebg-preview (1).png">S H Y M B U L A K</div>
+            <div id="KOLSAI_ID" style="margin: auto;"><img  style="width: 30px; vertical-align: middle;" src="./shymbulak-logo.6467f58.svg">S H Y M B U L A K</div>
             <div id="register_id">Register</div>
             <div id="Sign_in_id">Sign in</div>
-            
         </div>
     </header>    
 
 
-    <div id="News">News</div>
-    
+    <div class="Newsid">News</div>
+
     <div class="news_container">
-        <div class="news"><img src="https://www.datocms-assets.com/55179/1647270109-cf6523a1a5ff-img_5012.jpg">
-            <div>
-                <p>11.12.22</p>
-                <p>On 09.12.22, operation of the Medeu-Shymbulak cable cars was suspended for 45 minutes from 16:30 to 17:15 due to technical problems. The reason for stoppage was the failure of the contactor of the cable cars technical condition monitoring system, whereupon the data on the condition ceased to be received by the central station, resulting in stoppage of the cable cars.</p>
-                <p>At 17:15, for guests transportation who were in the Medeu-Shymbulak cable cars at the moment of stoppage, readjustment and start-up on the standby mode was made until the technical problems were completely eliminated by the technical team of "Shymbulak" resort.</p>
-                <p>At 18:30, "Shymbulak" resort technical team fully eliminated the faults and the cable cars continued its normal operation.</p>
-                <p>Free tea was provided to the guests, who were in line for the ride, and restaurants continued its operation so that the resort guests could wait for their turn to go down in warm environment. Also transfer by company vehicles to "Medeu" was arranged for the guests with children.</p>
-                <p>At the moment necessary measures have been taken to reduce the risk of recurrence of such situations and discomfort of resort guests in such incidents, including the work on installation of rescue - suitcases (rescue blanket, self-heating insoles; dry rations; activated carbon; antipyretic; anti-allergy medicine; anti-diarrhea medicine; eye drops;) for emergency situations in each cabin of the cable cars. The resort administration expresses its apologies for the inconvenience caused.</p>
+        <div class="news">
+            <img id="news_image" src="https://www.datocms-assets.com/55179/1647270109-cf6523a1a5ff-img_5012.jpg">
+            <div class="hotel-data">
+                <div class="hotel-data-desc">11.12.22<p></p>On 09.12.22, operation of the Medeu-Shymbulak cable cars was suspended for 45 minutes from 16:30 to 17:15 due to technical problems. The reason for stoppage was the failure of the contactor of the cable cars technical condition monitoring system, whereupon the data on the condition ceased to be received by the central station, resulting in stoppage of the cable cars.<p></p>
+                    At 17:15, for guests transportation who were in the Medeu-Shymbulak cable cars at the moment of stoppage, readjustment and start-up on the standby mode was made until the technical problems were completely eliminated by the technical team of "Shymbulak" resort.<p></p>
+                    At 18:30, "Shymbulak" resort technical team fully eliminated the faults and the cable cars continued its normal operation. <p></p>       
+                    Free tea was provided to the guests, who were in line for the ride, and restaurants continued its operation so that the resort guests could wait for their turn to go down in warm environment. Also transfer by company vehicles to "Medeu" was arranged for the guests with children.  <p></p>  
+                    At the moment necessary measures have been taken to reduce the risk of recurrence of such situations and discomfort of resort guests in such incidents, including the work on installation of rescue - suitcases (rescue blanket, self-heating insoles; dry rations; activated carbon; antipyretic; anti-allergy medicine; anti-diarrhea medicine; eye drops;) for emergency situations in each cabin of the cable cars. The resort administration expresses its apologies for the inconvenience caused.</div>
             </div>
         </div>
+        
         <div class="more">
-            <div class="date_div_new">09.11.22<div>What is a Season Pass?</div></div>
-            <hr>
-            <div class="date_div_new">10.11.22<div>Things to Do with Kids at the Resort</div></div>
-            <hr>
-            <div class="date_div_new">11.11.22<div>Resort Privileges</div></div>
+            <a class="nuxt-link-active"><div class="span">Other news</div></a>
+            <div class="more-news">
+                    <div class="news-items">
+                        <a class="news-item nuxt-link-active">
+                            <div class="date lit">09.11.22</div> 
+                            <hr>
+                            <a href="#" id="id3" onclick="callHotel(id)"><div class="name">What Is a Season Pass?</div></a>
+                        </a>
+                    </div>
+                    <div class="news-items">
+                        <a class="news-item nuxt-link-active">
+                            <div class="date lit">09.11.22</div> 
+                            <hr>
+                            <a href="#" id="id4" onclick="callHotel(id)"><div class="name">Season is open!</div></a>
+                        </a>
+                    </div>
+                    <div class="news-items">
+                        <a class="news-item nuxt-link-active">
+                            <div class="date lit">09.11.22</div> 
+                            <hr>
+                            <a href="#" id="id6" onclick="callHotel(id)"><div class="name">How to Prepare for Skiing/Snowboarding</div></a>
+                        </a>
+                    </div>
+            </div>
         </div>
     </div>
-    
     <footer>
         <div class="f-1">
             <div>
