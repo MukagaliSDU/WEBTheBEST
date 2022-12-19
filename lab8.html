@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link href="lab8.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="https://www.shutterstock.com/image-vector/landscape-skyblue-gradient-fill-vector-260nw-1713382663.jpg" rel="shortcut icon"
+          type="image/x-icon"/>
+    <title>Login</title>
+</head>
+<body>
+<div class="container">
+    <div class="forms">
+        <div class="form login">
+            <span class="title">Login</span>
+            <form action="#">
+                <div class="input-field">
+                    <input placeholder="Enter your email" required type="email" id = "lastEmail" name = "email">
+                    <i class="uil uil-envelope icon"></i>
+                </div>
+                <div class="input-field">
+                    <input class="password" placeholder="Enter your password" required type="password" id = "lastPassword" name = "password">
+                    <i class="uil uil-lock icon"></i>
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input id="logCheck" type="checkbox">
+                        <label class="text" for="logCheck">Remember me</label>
+                    </div>
+                    <a class="text" href="#">Forgot password?</a>
+                </div>
+                <div class="input-field button">
+                    <input type="submit" value="Login" onclick="log_php(lastEmail.value, lastPassword.value)">
+                </div>
+            </form>
+            <div class="login-signup">
+                <span class="text">Not registered yet?</span>
+                <a class="text signup-link" href="#">Signup Now</a>
+                </span>
+            </div>
+        </div>
+        <div class="form signup">
+            <span class="title">Registration</span>
+            <form action="#">
+                <div class="input-field">
+                    <input placeholder="Enter your name" id = "name1" required type="text"autocomplete="on">
+                    <i class="uil uil-user"></i>
+                </div>
+                <div class="input-field">
+                    <input placeholder="Enter your email" required type="email" id = "email">
+                    <i class="uil uil-envelope icon"></i>
+                </div>
+                <div class="input-field">
+                    <input placeholder="Enter your age" required type="number" id = "age" min = 6>
+                    <i class="uil uil-6-plus"></i>  
+                </div>
+                <div class="input-field">
+                    <input class="password" id="pass" placeholder="Create a password" required type="password" name = "password">
+                    <i class="uil uil-lock icon"></i>
+                </div>
+                <div class="input-field">
+                    <input class="password" id="pass2" placeholder="Confirm a password" required type="password" name = "password">
+                    <i class="uil uil-lock icon"></i>
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+                
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input id="termCon" type="checkbox">
+                        <label class="text" for="termCon" id="check">I accepted all terms and conditions</label>
+                    </div>
+                </div>
+
+                <div class="input-field button">
+                    <input type = "submit" value = "submit" onclick="reg_php(email.value, pass.value, pass2.value, name1.value, age.value)" >    
+                </div>
+            </form>
+
+            <div class="login-signup">
+                <span class="text">Already registered?</span>
+                <a class="text login-link" href="#">Login Now</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="lab8.js"></script>
+</html>
+
