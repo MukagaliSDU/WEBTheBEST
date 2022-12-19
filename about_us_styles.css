@@ -3,121 +3,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(17, 17, 17, 1);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #989898;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-li {
-    list-style-type: none;
-}
-
-.header {
-    display: flex;
-    left: 0;
-    right: 0;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 70px;
-    vertical-align: middle;
-}
-
-#main {
-    border: 3px solid #ebeff2;
-    border-radius: 12px;
-    padding: 2px 0;
-    background-color: rgb(5, 161, 5);
-    margin-left: .5%;
-    width: 40px;
-    text-align: center;
-}
-
-.id {
-    display: flex;
-    min-width: 200px;
-}
-
-.main {
-    font-size: 25px;
-    cursor: pointer;
-    color: #ebeff2;
-}
-
-
-.header {
-    display: flex;
-}
-
-#register_id, #Sign_in_id {
-    border: 3px solid #ebeff2;
-    border-radius: 12px;
-    min-width: 80px;
-    background-color: #fff;
-}
-
-#Sign_in_id {
-    margin-right: 2%;
-    padding-left: 1%;
-    padding-right: 1%;
-    font-size: 18px;
-    padding-top: 11px;
-    background-color: #75b6f2;
-    color: #ebeff2;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-#register_id {
-    margin-right: 1%;
-    padding-top: 11px;
-    font-size: 18px;
-    padding-right: 1%;
-    padding-left: 1%;
-    background-color: #fc0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-#KOLSAI_ID {
-    min-width: 200px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 * {
     box-sizing: border-box
@@ -136,8 +21,8 @@ li {
 
 .picture {
     width: 100%;
-    height: 50vh;
-    background-image: url("https://914141.smushcdn.com/2247443/wp-content/uploads/2021/10/kolsay-lake.jpeg?lossy=1&strip=1&webp=1");
+    height: 30vw;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/cd/e4/65/caption.jpg?w=1200&h=-1&s=1");
     background-position: 50%;
     background-size: cover;
     border-radius: 20px;
@@ -208,3 +93,36 @@ li {
     line-height: 37px;
     color: #ecececeb;
 }
+@media (max-width:700px){
+    .info{
+        flex-wrap: wrap;
+    }
+    .numbers{
+        width: auto;
+        margin: auto;
+    }
+    .text{
+        margin: auto;
+    }
+}
+.picture {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+  }
+  
+  .picture:hover {
+    box-shadow: 0px 7px 14px #8fc9f5f2;
+    transform: scale(1.05, 1.05);
+  }
+  .numbers {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+  }
+  
+  .numbers:hover {
+    box-shadow: 0px 7px 14px #8fc9f5f2;
+    transform: scale(1.15, 1.15);
+  }
+
+
+  

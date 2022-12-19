@@ -265,3 +265,36 @@ a {
     }
 }
 
+
+.about_images  img {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+  
+  }
+  
+  .about_images  img:hover {
+    box-shadow: 0px 7px 14px #b0d3eeda;
+    transform: scale(1.05, 1.05);
+  }
+  .one_tariff div {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+  
+  }
+  
+  .one_tariff div:hover {
+    box-shadow: 0px 7px 14px #b0d3eeda;
+    transform: scale(1.05, 1.05);
+  }
+
+  .about_info_contact div {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+  
+  }
+  
+  .about_info_contact div:hover {
+    box-shadow: 0px 7px 14px #389feff7;
+    transform: scale(1.85, 1.85);
+  }
+  

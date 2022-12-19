@@ -84,3 +84,14 @@
         width: 100%;
     }
 }
+
+.one_hotel img {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+  
+  }
+  
+  .one_hotel img:hover {
+    box-shadow: 0px 7px 14px #b0d3eeda;
+    transform: scale(1.05, 1.05);
+  }
