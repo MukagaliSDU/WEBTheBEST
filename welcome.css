@@ -135,7 +135,7 @@ a:hover{
 }
 
 .bigboldtext{
-    font-size: 50px;
+    font-size: 5vw;
     font-family: 'Panton',Arial,sans-serif;
     line-height: 1.1;
     font-weight: 700;
@@ -148,7 +148,7 @@ a:hover{
 }
 
 .justtext{
-    font-size: 20px;
+    font-size: 3vw;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Panton',Arial,sans-serif;
@@ -193,7 +193,12 @@ a:hover{
    .firstside{
     width: 100%;
     margin-left: 20px;
-    font-size: 40px;
+   }
+   .bigboldtext{
+    font-size: 7vw;
+   }
+   .justtext{
+    font-size: 4vw;
    }
  }
 
@@ -222,7 +227,6 @@ a:hover{
  }
  @media only screen and (max-width: 400px){
     .bigboldtext{
-        font-size: 30px;
         font-family: 'Panton',Arial,sans-serif;
         line-height: 1.1;
         font-weight: 700;
