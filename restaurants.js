@@ -1,20 +1,42 @@
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementsByClassName("section")[0].style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
-    document.getElementsByClassName("text_title")[0].style.color = "white";
-    document.getElementsByClassName("text_reklame")[0].style.color = "white";
-    document.getElementsByTagName("header")[0].style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+function callHotel(id) {
+  switch (id) {
+      case "id1":
+          sessionStorage.setItem("hotelID", "id1");
+          document.getElementById("id1").href = "./inrestaurants.html";
+          break;
+      case "id2":
+          sessionStorage.setItem("hotelID", "id2");
+          document.getElementById("id2").href = "./inrestaurants.html";
+          break;
+      case "id3":
+          sessionStorage.setItem("hotelID", "id3");
+          document.getElementById("id3").href = "./inrestaurants.html";
+          break;
+      case "id4":
+          sessionStorage.setItem("hotelID", "id4");
+          document.getElementById("id4").href = "./inrestaurants.html";
+          break;
+
+      case "id5":
+          sessionStorage.setItem("hotelID", "id5");
+          document.getElementById("id5").href = "./inrestaurants.html";
+          break;
+      case "id6":
+          sessionStorage.setItem("hotelID", "id6");
+          document.getElementById("id6").href = "./inrestaurants.html";
+          break;
+
+      case "id7":
+          sessionStorage.setItem("hotelID", "id7");
+          document.getElementById("id7").href = "./inrestaurants.html";
+          break;
+      case "id8":
+          sessionStorage.setItem("hotelID", "id8");
+          document.getElementById("id8").href = "./inrestaurants.html";
+          break;
+      case "id9":
+          sessionStorage.setItem("hotelID", "id9");
+          document.getElementById("id9").href = "./inrestaurants.html";
+          break;
   }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "1%";
-    document.body.style.backgroundColor = "white";
-    document.getElementsByTagName("header")[0].style.backgroundColor = "white";
-    document.getElementsByClassName("text_title")[0].style.color = "black";
-    document.getElementsByClassName("text_reklame")[0].style.color = "black";
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementsByClassName("section")[0].style.marginLeft = "1%";
-  }
+}
