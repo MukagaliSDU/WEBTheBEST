@@ -27,20 +27,18 @@ login.addEventListener("click", () => {
     container.classList.remove("active");
 });
 
-form.onsubmit = (e)=>{
+document.querySelector("form").addEventListener('submit', (e)=>{
     e.preventDefault();
-}
+})
 
 function log_php(lastEmail, lastPassword){
-    alert(2)
     $.ajax({
         url: 'lab9.php',
         type: 'POST',
         data: {email: lastEmail, password: lastPassword},
         success: function (result){
             console.log(result);
-            if(result !== " "){
-            alert(3);
+            if(result !== "Wrong data!"){
             sessionStorage.setItem('curr_user',result);
                 window.location.replace("./homepage.html");
             }
@@ -80,5 +78,4 @@ function checkUser(){
 }
 function clear(){
 sessionStorage.clear();
-
 }

@@ -21,7 +21,7 @@ define('DB_NAME', 'webthebest');
         $data = $result->fetch_assoc();
 
         if(mysqli_num_rows($result) == 1){
-            echo $data['name'];
+            echo $data['name'] ; 
             exit();
         }
         else{
