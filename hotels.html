@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Hotels</title>
     <link rel="stylesheet" href="./hotels.css">
     <link rel="stylesheet" href="./footer.css">
@@ -11,9 +12,10 @@
     <script src="ticket.js"></script>
     <script src="hotels.js"></script>
     <script src="./lab8.js"></script>
+    <script src="./hotels_animation.js"></script>
 
 </head>
-<body onload="checkUser()">
+<body onload="checkUser(), hotels_animation()">
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./homepage.html">Main</a>

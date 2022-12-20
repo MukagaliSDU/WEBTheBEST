@@ -42,3 +42,31 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+function animation(){
+  $(".main_container").show(10000);
+  $("#news").hide();
+  $("#news").slideDown(1000)
+  $(".container").hide()
+  $(".container").slideDown(1000);
+
+  $(".right_side_see_all").hide()
+  $(".right_side_see_all").slideDown(1000);
+
+  $("#objects").hide()
+  $("#objects").slideDown(1000);
+
+  $(".news").hide()
+  $(".news").slideDown(1000)
+
+  $(".in-2").hide()
+  $(".in-2").slideDown(1000);
+
+  $(".single").hide()
+  $(".single").slideDown(1000);
+  $("footer").fadeOut(10).fadeIn(1800);
+
+  
+
+}

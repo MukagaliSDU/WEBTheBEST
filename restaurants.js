@@ -40,3 +40,9 @@ function callHotel(id) {
           break;
   }
 }
+function restaurants_animations(){
+    $(".one_hotel").hide();
+    $(".one_hotel").fadeIn(1800);
+
+    $("h1").fadeOut(1).fadeIn(1800);
+}

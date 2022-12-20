@@ -11,4 +11,9 @@ function hotel(){
         case "id8": document.getElementById("news_image").src = "https://img5.goodfon.com/wallpaper/big/b/47/kolsay-lakes-national-park-middle-kolsai-lake-tian-shan-moun.jpg"; break;
         case "id9": document.getElementById("news_image").src = "https://i.ytimg.com/vi/1Bs7x2X5JsQ/maxresdefault.jpg"; break;
     }
+}function innews_animation(){
+    $(".Newsid").fadeOut(100).fadeIn(800);
+    $(".hotel").fadeOut(100).fadeIn(800);
+    $(".news_container").fadeOut(100).fadeIn(800);
+
 }

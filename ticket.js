@@ -19,3 +19,8 @@ function openNav() {
     document.getElementsByClassName("section")[0].style.marginLeft = "1%";
     document.getElementsByTagName("header")[0].style.backgroundColor = "white";
   }
+  function tickets_animations(){
+    $("h1").hide();
+    $("h1").fadeIn(1800);
+    $(".ticket").fadeOut(100).fadeIn(800);
+}

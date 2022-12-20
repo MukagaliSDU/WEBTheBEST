@@ -40,3 +40,7 @@ function callHotel(id) {
             break;
     }
 }
+function news_animation(){
+    $(".Newsid").fadeOut(100).fadeIn(800);
+    $(".one_hotel").fadeOut(100).fadeIn(800);
+}

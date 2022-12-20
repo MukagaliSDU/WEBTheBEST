@@ -75,3 +75,12 @@ function hotel(){
             break;
     }
 }
+
+function inhotels(){
+    $(".about_hotel").hide();
+    $(".about_hotel").fadeIn(1800);
+
+    $("h1").fadeOut(1).fadeIn(1800);
+    $("h4").fadeOut(1).fadeIn(1800);
+
+}
