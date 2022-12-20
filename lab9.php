@@ -18,9 +18,10 @@ define('DB_NAME', 'webthebest');
         $sql = "select * from users where email = '$uemail' AND password = '$upassword' limit 1";
 
         $result = mysqli_query($link, $sql);
+        $data = $result->fetch_assoc();
 
         if(mysqli_num_rows($result) == 1){
-            echo "Logged IN!";
+            echo $data['name'];
             exit();
         }
         else{
