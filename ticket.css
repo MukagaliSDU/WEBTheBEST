@@ -134,6 +134,14 @@ li {
     gap: 24px;
     margin-bottom: 5%;
 }
+@media (max-width:1300px){
+    .contents{
+        justify-content: center;
+    }
+    .in-1 h1{
+        margin-left: 13%;
+    }
+}
 .ticket {
     display: flex;
     width: 30%;
@@ -164,7 +172,7 @@ li {
 }
 
 .info hr {
-    margin-top:50px;
+    margin-top:40px;
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
