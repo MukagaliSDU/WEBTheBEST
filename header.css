@@ -93,3 +93,11 @@ li {
 img {
   vertical-align: middle;
 }
+@media (max-width:570px){
+  .log-in{
+    min-width: 100px;
+  }
+  #KOLSAI_ID{
+    font-size: 13px;
+  }
+}

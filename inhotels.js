@@ -1,4 +1,3 @@
-
 function hotel(){
     const hotelID = sessionStorage.getItem("hotelID");
     switch (hotelID) {
@@ -31,7 +30,8 @@ function hotel(){
             document.getElementById("hotels_names_head").innerHTML = "Bereke Kolsay Resort";
             break;
 
-        case "Kolsay_Lakes_Town": document.getElementById("hotel_image").src = "https://cf.bstatic.com/xdata/images/hotel/max1280x900/265092345.jpg?k=cdc31ab1e538a15aea71c52de00e7ebed716beefe1e6458dcc471b0fc9890643&o=&hp=1";
+        case "Kolsay_Lakes_Town": 
+            document.getElementById("hotel_image").src = "https://cf.bstatic.com/xdata/images/hotel/max1280x900/265092345.jpg?k=cdc31ab1e538a15aea71c52de00e7ebed716beefe1e6458dcc471b0fc9890643&o=&hp=1";
             document.getElementById("hotel_description").innerHTML = " Kolsay Lakes Town on the shore of the lower lake Kolsay. We are located in the Kolsay Kolderi National Park, 300 km from Almaty";
             document.getElementById("hotel_name").innerHTML = "@Kolsay_Lakes_Town";
             document.getElementById("hotel_name").href = "https://www.instagram.com/kolsay_lakes_town/";

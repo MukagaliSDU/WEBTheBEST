@@ -91,4 +91,7 @@ body{
   .news_wrapper .hotel-link{
       width: 100%;
   }
+  .log-in{
+    min-width: 100px;
+  }
 }
